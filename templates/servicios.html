@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+		<ul class="MainMenu-list">
+			<li class="MainMenu-item"><a href="/" id="empresa" class="MainMenu-link">Empresa</a></li>
+			<li class="MainMenu-item"><a href="/servicios/" id="servicios" class="MainMenu-link activo">Servicios</a></li>
+			<li class="MainMenu-item"><a href="/contacto/" id="contacto" class="MainMenu-link">Contacto</a></li>
+		</ul>
+{% endblock%}
+
+{% block content %}
+	<section class="contenidoServicios">
+		<br>
+		<h1>¡ Nuestra experiencia a su disposición !</h1>
+		<div class="ditiosServicios1">
+			<img src="{{STATIC_URL}}img/icon.png" />
+			Desarrollo de Software a Medida, el solucionar sus problemas de T.I. es nuestra prioridad.
+			<hr class="ldivision">
+			<div class="describeServicios">La Web está teniendo un gran auge y seguirá creciendo en los próximos años, es por ello que; ofrecemos la mejor tecnología para el desarrollo de sus herramientas. Nos especializamos en Apache, NGINX, HTML5, JavaScript, CSS3 y Python-Django.</div>
+		</div>
+
+		<div class="ditiosServicios2">
+			<img src="{{STATIC_URL}}img/icon.png" />
+			Instalación de Servidores Linux, configuramos solo los servicios que su empresa necesite para el desempeño de sus tareas diarias.
+			<hr class="ldivision">
+			<div class="describeServicios">Linux es un Sistema Operativo estable y 100% confiable, desarrollado con la finalidad de ofrecer servicios de alto desempeño. Es usado por gandes compañías para publicar contenido en la Web, realizar cálculos matemáticos de gran magnitud, administrar el ancho de banda, entre otras muchas características que lo colocan en los primeros lugares para uso en Servidores.</div>
+		</div>
+
+		<div class="ditiosServicios3">
+			<img src="{{STATIC_URL}}img/icon.png" />
+			Integración de Hardware y Software, la mejor unión entre lo físico y lo intangible para la solución de sus problemas de T.I.
+			<hr class="ldivision">
+			<div class="describeServicios">Deje por un lado el mito de tener que comprar servidores costosos para administrar su Red o Aplicaciones.</div>
+		</div>
+
+		<div class="ditiosServicios4">
+			<img src="{{STATIC_URL}}img/icon.png" />
+			Redes Inalámbricas y Cableadas, porque sabemos que su información es importante le diseñamos e instalamos la Red desde cero.
+			<hr class="ldivision">
+			<div class="describeServicios">Ofrecemos nuestra experiencia para que administre su ancho de banda de la mejor manera y obtenga el mejor desempeño de sus Aplicaciones Web.</div>
+		</p>
+	</section>
+{% endblock%}

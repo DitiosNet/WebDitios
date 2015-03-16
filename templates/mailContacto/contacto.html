@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+ {% block menu %}
+		<ul class="MainMenu-list">
+			<li class="MainMenu-item"><a href="/" id="empresa" class="MainMenu-link">Empresa</a></li>
+			<li class="MainMenu-item"><a href="/servicios/" id="servicios" class="MainMenu-link">Servicios</a></li>
+			<li class="MainMenu-item"><a href="/contacto/" id="contacto" class="MainMenu-link activo">Contacto</a></li>
+		</ul>
+{% endblock%}
+
+{% block content %}
+	<section class="contenidoContacto">
+		<br>
+		<h1>Póngase en contacto, nos dará gusto ayudarle!!!</h1>
+		<section class="formulario">
+			<div class="textoContacto">Contáctenos</div>
+			<form method="post">
+				{% csrf_token %}
+				<input type="text" name="nombre" class="entradaTexto" placeholder="Nombre" /><br>
+				<input type="text" name="asunto" class="entradaTexto" placeholder="Asunto" /><br>
+				<input type="email" name="email" class="entradaTexto" placeholder="Email" /><br>
+				<textarea name="descripcion" class="entradaAreaTexto" cols="30" rows="5" placeholder="Descripción"></textarea><br>
+				<input type="submit" class="botonTexto" value="Enviar" />
+			</form>
+		</section>
+		<hr class="linea">
+		<section class="datosContacto">
+			<div class="textoContacto">Teléfonos y Correo</div><br><br>
+			Cel.<br>9932 41 28 27<br>9931 53 97 71<br><br>
+			Email<br><strong>contacto@ditios.net</strong>
+		</section>
+	</section>
+{% endblock%}

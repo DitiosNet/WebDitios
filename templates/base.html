@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Empresa Mexicana dedicada al Desarrollo de Software a Medida con Tecnologías Libres en Villahermosa, Tabasco" />
+	<meta name="keywords" content="Ditios, Desarrollo de Software en Tabasco, Linux, OpenSource" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>Desarrollo Integral de Tecnologías de Información OpenSource</title>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/estilos.css">
+	<link rel="shortcut icon" href="{{STATIC_URL}}img/icon2.png">
+</head>
+<body>
+	<!--  ENCABEZADO -->
+	<nav class="MainMenu">
+		<img class="Logo-image" src="{{STATIC_URL}}img/d.png" alt="DitiosNet" /><span class="nombre">D.I.T.I.O.S.</span>
+		{% block menu %}
+		{% endblock %}
+		<div id="Boton-menu" class="MainMenu-boton icon-arrow-down">Menú </div>
+	</nav>
+	<header class="Header">
+		<div class="Header-imageDescription">Open Source</div>
+	</header>
+
+	<!--  CONTENIDO -->
+	{% block content%}
+	{% endblock %}
+
+	<!--  PIE DE PÁGINA -->
+	<footer class="Footer">
+		<p class="FooterMenu-herramientas">
+			<span class="FooterMenu-titulo">Herramientas</span>
+			<br><br>
+			<a class="Footer-link" href="http://www.ditios.net:8069" target="_blank">Openerp</a><br><br>
+			<a class="Footer-link" href="http://www.ditios.net:8080/owncloud" target="_blank">Owncloud</a><br><br>
+			<a class="Footer-link" href="http://50.116.27.8/sites/ditios/ximi" target="_blank">Primaria</a>
+		</p>
+		<p class="FooterMenu-social">
+			<span class="FooterMenu-titulo">Social</span>
+			<br><br>
+			<a class="Footer-link" href="#"><span class="icon-facebook"></span> Facebook</a><br><br>
+			<a class="Footer-link" href="https://twitter.com/DitiosNet" target="_blank"><span class="icon-twitter"></span> Twitter</a><br><br>
+			<a class="Footer-link" href="https://github.com/DitiosNet/WebDitios" target="_blank"><span class="icon-github"></span> Github</a>
+		</p>
+
+		<div class="Footer-textDescription">
+			<div class="icon-cc-sa"></div> Copyleft - ditios.net 2014 - <a href="http://django.es" class="logoDjango" target="_blank"><img src="{{STATIC_URL}}img/80x15-django-powered.png" alt="django-powered" /></a>
+		</div>
+	</footer>
+
+	<script src="{{STATIC_URL}}js/jquery-1.11.0.min.js"></script>
+	<script src="{{STATIC_URL}}js/main.js"></script>
+</body>
+</html>
